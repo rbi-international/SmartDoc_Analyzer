@@ -1,0 +1,124 @@
+# SmartDoc Analyzer - Research Configuration
+# Advanced RAG System for Document Intelligence
+
+# API Configuration
+api:
+  openai:
+    api_key: "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"
+    model: "gpt-4o-mini"
+    embedding_model: "text-embedding-3-small"
+    temperature: 0.2
+    max_tokens: 4000
+    timeout: 30
+
+# Document Processing Configuration
+document_processing:
+  chunk_size: 1200
+  chunk_overlap: 300
+  separators: ["\n\n", "\n", ".", "!", "?", ";", ":", " ", ""]
+  min_chunk_length: 100
+  max_chunk_length: 2000
+  enable_metadata_extraction: true
+  
+# Vector Database Configuration
+vector_db:
+  provider: "faiss"  # Options: faiss, chroma, pinecone
+  index_type: "flat"  # Options: flat, ivf, hnsw
+  distance_metric: "cosine"  # Options: cosine, euclidean, dot_product
+  dimension: 1536
+  storage_path: "./data/vector_stores/"
+  index_name: "smartdoc_index"
+  
+# Retrieval Configuration
+retrieval:
+  search_type: "hybrid"  # Options: semantic, keyword, hybrid
+  top_k: 5
+  similarity_threshold: 0.7
+  reranking_enabled: true
+  reranking_model: "cross-encoder"
+  diversity_lambda: 0.5
+
+# Generation Configuration
+generation:
+  system_prompt: |
+    You are an advanced document analysis assistant. Provide comprehensive, accurate answers based on the retrieved context.
+    Always cite sources and maintain factual accuracy. Structure your responses clearly and professionally.
+    
+    When answering:
+    1. Base your response primarily on the provided context
+    2. Be specific and detailed when possible
+    3. If the context doesn't contain enough information, say so
+    4. Cite sources using the format [Source: filename/URL]
+  
+  response_format:
+    include_sources: true
+    include_confidence: true
+    include_metadata: true
+    max_response_length: 2000
+    
+# Web Interface Configuration
+interface:
+  title: "SmartDoc Analyzer"
+  subtitle: "Advanced Document Intelligence Research Platform"
+  theme: "dark"
+  layout: "wide"
+  sidebar_width: 350
+  max_file_size: 50  # MB
+  supported_formats: ["txt", "pdf", "docx", "html", "md"]
+
+# Data Sources Configuration
+data_sources:
+  web_scraping:
+    user_agent: "SmartDoc-Analyzer/1.0 (Research Project)"
+    timeout: 30
+    retry_attempts: 3
+    retry_delay: 2
+    respect_robots_txt: true
+    
+  file_upload:
+    max_files: 10
+    scan_for_malware: true
+    extract_metadata: true
+    
+# Performance Configuration
+performance:
+  enable_caching: true
+  cache_ttl: 3600  # seconds
+  batch_size: 32
+  parallel_processing: true
+  max_workers: 4
+  memory_limit: "2GB"
+
+# Monitoring and Logging
+monitoring:
+  log_level: "INFO"  # Options: DEBUG, INFO, WARNING, ERROR
+  log_file: "./logs/smartdoc.log"
+  enable_metrics: true
+  metrics_file: "./logs/metrics.json"
+  track_usage: true
+  track_performance: true
+
+# Security Configuration
+security:
+  api_rate_limiting: true
+  max_requests_per_minute: 60
+  enable_input_validation: true
+  sanitize_uploads: true
+  encrypt_storage: false  # Set to true for production
+
+# Research Features
+research:
+  enable_experiments: true
+  experiment_tracking: true
+  a_b_testing: false
+  model_comparison: true
+  benchmark_mode: false
+  
+# Advanced Features
+advanced:
+  multi_language_support: true
+  auto_language_detection: true
+  summarization_enabled: true
+  question_generation: true
+  fact_checking: false
+  citation_extraction: true
