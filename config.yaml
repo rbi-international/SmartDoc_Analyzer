@@ -4,7 +4,7 @@
 # API Configuration
 api:
   openai:
-    api_key: "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"
+    api_key: ""
     model: "gpt-4o-mini"
     embedding_model: "text-embedding-3-small"
     temperature: 0.2
