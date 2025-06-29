@@ -1,0 +1,169 @@
+# Test Data for SmartDoc Analyzer
+
+## Quick Test URLs (Copy and paste these into your app)
+
+### Technology & AI Articles
+```
+https://en.wikipedia.org/wiki/Artificial_intelligence
+https://en.wikipedia.org/wiki/Machine_learning
+https://en.wikipedia.org/wiki/Natural_language_processing
+```
+
+### Science & Research
+```
+https://en.wikipedia.org/wiki/Climate_change
+https://en.wikipedia.org/wiki/Renewable_energy
+https://en.wikipedia.org/wiki/Quantum_computing
+```
+
+### Business & Economics
+```
+https://en.wikipedia.org/wiki/Digital_transformation
+https://en.wikipedia.org/wiki/Cryptocurrency
+https://en.wikipedia.org/wiki/Remote_work
+```
+
+## Test Queries to Try After Processing
+
+### Basic Questions
+- "What is artificial intelligence?"
+- "How does machine learning work?"
+- "What are the main types of renewable energy?"
+
+### Analytical Questions
+- "Compare machine learning and artificial intelligence"
+- "What are the challenges of climate change?"
+- "How has remote work changed business practices?"
+
+### Summary Questions
+- "Summarize the key points about quantum computing"
+- "What are the main benefits and risks of cryptocurrency?"
+- "Provide an overview of digital transformation"
+
+## Sample File Content (Save as .txt files to test file upload)
+
+### Sample 1: AI Research (save as "ai_research.txt")
+```
+Artificial Intelligence: Current State and Future Prospects
+
+Introduction
+Artificial Intelligence (AI) has emerged as one of the most transformative technologies of the 21st century. From machine learning algorithms that power recommendation systems to natural language processing models that enable human-computer interaction, AI is reshaping industries and society.
+
+Key Areas of AI Development
+1. Machine Learning: Algorithms that learn from data without explicit programming
+2. Deep Learning: Neural networks with multiple layers for complex pattern recognition
+3. Natural Language Processing: Enabling computers to understand and generate human language
+4. Computer Vision: Teaching machines to interpret and understand visual information
+5. Robotics: Integrating AI with physical systems for autonomous operation
+
+Current Applications
+- Healthcare: Diagnostic imaging, drug discovery, personalized treatment
+- Finance: Fraud detection, algorithmic trading, risk assessment
+- Transportation: Autonomous vehicles, traffic optimization, logistics
+- Entertainment: Content recommendation, game AI, digital assistants
+- Manufacturing: Quality control, predictive maintenance, supply chain optimization
+
+Challenges and Considerations
+- Ethical implications of AI decision-making
+- Data privacy and security concerns
+- Job displacement and workforce transformation
+- Bias in AI algorithms and datasets
+- Regulatory frameworks and governance
+
+Future Outlook
+The future of AI promises continued advancement in areas such as artificial general intelligence, quantum-enhanced machine learning, and human-AI collaboration. As these technologies mature, society must address the accompanying challenges while harnessing AI's potential for positive impact.
+
+Conclusion
+AI represents both tremendous opportunity and significant responsibility. Success in the AI era will require thoughtful development, ethical implementation, and collaborative approaches to ensure technology serves humanity's best interests.
+```
+
+### Sample 2: Climate Science (save as "climate_science.txt")
+```
+Climate Change: Understanding the Science and Impacts
+
+Overview
+Climate change refers to long-term shifts in global temperatures and weather patterns. While climate variations occur naturally, scientific evidence shows that human activities, particularly greenhouse gas emissions, are the primary driver of observed climate change since the mid-20th century.
+
+Scientific Basis
+The greenhouse effect is fundamental to Earth's climate. Greenhouse gases in the atmosphere trap heat from the sun, warming the planet. Key greenhouse gases include:
+- Carbon dioxide (CO2): Primary contributor from fossil fuel combustion
+- Methane (CH4): Released from agriculture and waste management
+- Nitrous oxide (N2O): From agricultural practices and fuel combustion
+- Fluorinated gases: Used in refrigeration and industrial processes
+
+Observed Impacts
+Current evidence of climate change includes:
+- Rising global average temperatures
+- Melting ice sheets and glaciers
+- Rising sea levels
+- Changes in precipitation patterns
+- More frequent extreme weather events
+- Shifts in plant and animal habitats
+
+Regional Variations
+Climate impacts vary significantly by geography:
+- Arctic regions experience amplified warming
+- Small island nations face existential threats from sea level rise
+- Arid regions may become more drought-prone
+- Coastal areas face increased flooding risks
+- Mountain regions see changes in snow and ice patterns
+
+Mitigation Strategies
+Reducing greenhouse gas emissions requires:
+- Transition to renewable energy sources
+- Improved energy efficiency in buildings and transportation
+- Sustainable agriculture and land use practices
+- Industrial process improvements
+- Carbon capture and storage technologies
+
+Adaptation Measures
+Preparing for climate impacts involves:
+- Infrastructure improvements for extreme weather
+- Water resource management strategies
+- Coastal protection measures
+- Agricultural adaptation techniques
+- Emergency preparedness planning
+
+International Cooperation
+Global climate action includes:
+- Paris Agreement commitments
+- International technology transfer
+- Climate finance for developing nations
+- Scientific research collaboration
+- Policy coordination and standards
+
+Conclusion
+Addressing climate change requires unprecedented global cooperation, technological innovation, and societal transformation. The scale and urgency of the challenge demand immediate action across all sectors of society.
+```
+
+## Testing Steps
+
+1. **Start your SmartDoc Analyzer**
+2. **Paste the URLs** into the "Data Input" section (URLs tab)
+3. **Click "Process Documents"** and wait for processing to complete
+4. **Try the sample queries** in the Query Interface
+5. **Test different features** like analytics and document explorer
+
+## Expected Results
+
+After processing, you should see:
+- ✅ Documents successfully processed
+- 📊 Analytics showing document counts and statistics
+- 🔍 Ability to search and get relevant answers
+- 📄 Document explorer showing processed content
+
+## Troubleshooting Tips
+
+If processing fails:
+1. **Check your internet connection** (for URL processing)
+2. **Verify your OpenAI API key** is set in environment variables or config.yaml
+3. **Try with fewer URLs first** (start with just 1-2)
+4. **Check the logs** for specific error messages
+
+## Advanced Testing
+
+Once basic functionality works, try:
+- **Mixed content types** (combine URLs and files)
+- **Complex queries** requiring synthesis across multiple documents
+- **Configuration changes** (different chunk sizes, search strategies)
+- **Large document sets** (10+ URLs)
