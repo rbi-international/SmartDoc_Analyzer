@@ -410,10 +410,10 @@ git push origin feature/amazing-feature
 <table>
 <tr>
 <td align="center">
-<a href="https://github.com/yourusername">
-<img src="https://github.com/yourusername.png" width="100px;" alt=""/>
+<a href="https://github.com/rbi-international">
+<img src="https://github.com/rbi-international.png" width="100px;" alt=""/>
 <br />
-<sub><b>Your Name</b></sub>
+<sub><b>Rohit Bharti</b></sub>
 </a>
 <br />
 💻📖🎨
